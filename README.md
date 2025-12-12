@@ -1,2 +1,1 @@
-# GashU
-website for artist
+jrel
