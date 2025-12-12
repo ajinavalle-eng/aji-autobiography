@@ -1,0 +1,172 @@
+
+:root {
+    --primary-color: #fa52d3;
+    --secondary-color: #ffd2f2;
+    --background-color: #ff9eec;
+    --font-family: 'Arial', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+h1, h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+    padding-bottom: 0.2em;
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+}
+
+/* --- Header and Hero Section --- */
+.hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #7986cb 100%);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 5px;
+}
+
+.intro-tagline {
+    font-size: 1.2em;
+    margin-top: 5px;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the photo circular */
+    object-fit: cover;
+    margin: 20px auto;
+    border: 4px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Main Content Sections --- */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content-section {
+    padding: 40px 0;
+    text-align: center; /* Center the h2 */
+}
+
+/* Alternate background color for visual separation */
+.content-section:nth-child(even) {
+    background-color: var(--secondary-color);
+}
+
+.content-section p {
+    max-width: 700px;
+    margin: 10px auto 20px auto;
+    text-align: left;
+}
+
+/* --- Specific Section Styles --- */
+
+/* Education Timeline */
+.timeline {
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
+    border-left: 2px solid var(--primary-color);
+    padding-left: 20px;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -27px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    border: 3px solid #fff;
+}
+
+.institution {
+    font-style: italic;
+    color: #666;
+    margin-top: -10px;
+}
+
+/* Hobbies Grid */
+.interests-grid {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.interests-grid li {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.interests-grid li:hover {
+    background-color: #5c6bc0; 
+}
+
+/* Quote Section */
+.favorite-quote blockquote {
+    font-size: 1.5em;
+    font-style: italic;
+    color: var(--primary-color);
+    margin: 20px auto 10px auto;
+    padding: 20px;
+    border-left: 5px solid var(--primary-color);
+    max-width: 700px;
+    text-align: left;
+}
+
+.favorite-quote cite {
+    display: block;
+    text-align: right;
+    font-size: 1em;
+    color: #666;
+    margin-top: -10px;
+    padding-right: 20px;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}
